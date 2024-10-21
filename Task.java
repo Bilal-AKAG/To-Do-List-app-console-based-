@@ -18,7 +18,7 @@ public class Task {
     }
     
     public String toString(){
-        return (isCompleted?"[✔]":"[❌]")+description;
+        return (isCompleted?"[compeleted_task] -":"[pending..]-")+" "+description;
 }
 }
 

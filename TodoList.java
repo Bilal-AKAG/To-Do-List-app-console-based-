@@ -2,9 +2,7 @@ import java.util.ArrayList;
 
 public class TodoList {
     private ArrayList<Task> tasks;
-    Task disc=new Task(null);
-    String discription= disc.getDescription();
-    public void  ToDoist() {
+    public  TodoList() {
         tasks = new ArrayList<>();
     }
    public void addTask(String discription ){
@@ -12,7 +10,7 @@ public class TodoList {
       System.out.println("Task added successfully");
     
    }
-   public void viewTask(){
+   public void viewTasks(){
     if (tasks.isEmpty()) {
         System.out.println("No tasks available.");
    }
